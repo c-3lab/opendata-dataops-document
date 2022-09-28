@@ -14,7 +14,7 @@ DataOpsを活用したオープンデータ利活用に関する報告書
 * オープンデータの活用・促進を行いたいと思っている全ての人
 
 # ロードマップ
-今後のドキュメンテーションに加える予定の項目です。
+今後、本ドキュメントに加える予定の項目です。
 
 * ガバナンスの整理
 * データやITリテラシー教育のプロセスを加味
@@ -23,7 +23,7 @@ DataOpsを活用したオープンデータ利活用に関する報告書
 # コントリビューション(Issue、Pull Request)
 ご意見やご質問、修正依頼等は**Issue**および**Pull Request**にて歓迎しております。
 
-オープンに様々な方のご意見を取り入れた形でドキュメンテーションを改善していけたら幸いです。
+オープンに様々な方のご意見を取り入れた形でドキュメントを改善していけたら幸いです。
 
 # LICENSE
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />この 作品 は <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">クリエイティブ・コモンズ 表示 - 継承 4.0 国際 ライセンス</a>の下に提供されています。
