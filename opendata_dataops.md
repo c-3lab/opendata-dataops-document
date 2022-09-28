@@ -1,22 +1,6 @@
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-<center>
-<span style="font-size: 400%;">DataOpsを活用した</span></br>
-</br>
-</br>
-<span style="font-size: 400%;">オープンデータ利活用に関する</span></br>
-</br>
-</br>
-<span style="font-size: 400%;">報告書</span></br>
-</center>
-</br>
+DataOpsを活用したオープンデータ利活用に関する報告書
 
-<span style="font-size: 200%;">Ver 0.9</span></br>
+Ver 0.9
 2022年09月30日
 
 c-3lab
