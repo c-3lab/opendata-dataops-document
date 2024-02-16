@@ -7,7 +7,7 @@ Version：0.1
 ![](media/image1.png)
 ![](media/image2.png)　By C3Lab
 
-このドキュメントの内容物は [クリエイティブ・コモンズ 表示 4.0 ライセンス](http://creativecommons.org/licenses/by/4.0/deed.ja) [1]の下に提供されています。
+このドキュメントの内容物は [クリエイティブ・コモンズ 表示 4.0 ライセンス](http://creativecommons.org/licenses/by/4.0/deed.ja) [^1]の下に提供されています。
 
 <div style="page-break-before:always"></div>
 
@@ -46,7 +46,7 @@ Version：0.1
 この阻害要因を解消する為の手法としてDataOpsの概念に焦点を当てている。
 
 #### DataOpsとは
-ガートナー社の定義[2]によると「組織全体のデータ管理者とデータ利用者の間のコミュニケーションの向上と、データフローの統合と自動化の改善に焦点を当てた共同作業 によるデータ管理の手法」と定義している。DataOpsの概念を利用することで、利用者が、必要なタイミングで信頼できるデータや分析結果を入手可能となり、データの利用者と提供者とが協調してプロセス、ツール環境や組織文化の 継続的な改善が期待できる。  
+ガートナー社の定義[^2]によると「組織全体のデータ管理者とデータ利用者の間のコミュニケーションの向上と、データフローの統合と自動化の改善に焦点を当てた共同作業によるデータ管理の手法」と定義している。DataOpsの概念を利用することで、利用者が必要なタイミングで信頼できるデータや分析結果を入手可能となり、データの利用者と提供者が協調することでプロセス、ツール環境や組織文化の継続的な改善が期待できる。  
 
 この概念を利用することでこれらの阻害要因を解消することが可能であるという仮説に基づき、DataOpsのプロセスを提案した。  
 
@@ -129,9 +129,6 @@ Version：0.1
 オープンデータにDataOpsのプロセスを適用することがオープンデータの利活用促進につながることを証明した。
 これを踏まえ、データ利用者/データ提供者への認知のさらなる普及、ひいては政府/自治体まで普及させることを目指し、日本のオープンデータの改善及び活用促進に寄与する。
 
-## **参照文献**
-|    |    |
-|---|---|
-|[1]  |クリエイティブ・コモンズ・ライセンス, “クリエイティブ・コモンズ・ライセンス,” [オンライン]. Available: https://creativecommons.org/licenses/by/4.0/. [アクセス日: 16 09 2022]. 
-|[2]|Gartner, Inc. and/or its affiliates., “Press Releases,” 11 9 2018. [オンライン]. Available: https://www.gartner.com/en/newsroom/press-releases/2018-09-11-gartner-hype-cycle-for-data-management-positions-three-technologies-in-the-innovation-trigger-phase-in-2018. [アクセス日: 29 8 2022].|
-****
+## **参考文献**
+[^1]: クリエイティブ・コモンズ・ライセンス, “クリエイティブ・コモンズ・ライセンス,” [オンライン]. Available: https://creativecommons.org/licenses/by/4.0/. [アクセス日: 16 09 2022].</small>  
+[^2]: Gartner, Inc. and/or its affiliates., “Press Releases,” 11 9 2018. [オンライン]. Available: https://www.gartner.com/en/newsroom/press-releases/2018-09-11-gartner-hype-cycle-for-data-management-positions-three-technologies-in-the-innovation-trigger-phase-in-2018. [アクセス日: 29 8 2022].</small>  
