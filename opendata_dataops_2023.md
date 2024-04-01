@@ -65,8 +65,6 @@ Version：0.1
 - Social Hack Day #56 2023年12月16日開催
 - Social Hack Day #57 2024年01月20日開催
 - Social Hack Day #58 2024年02月17日開催
-- オープンデータ・デイ in 沖縄 2024年03月開催
-- Code for Japan+TIS スマートシティイベント 2024年03月開催
 
 ### **検証イベント詳細**
 
@@ -93,7 +91,7 @@ Version：0.1
       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
     </tr>
     <tr>
-      <td>自治体がオープンデータを提供するプロセスを体験することで、作業量等の観点から自治体職員が手作業でデータ加工を行うのは現実的ではないということを実感した</td>
+      <td>自治体がオープンデータを提供するプロセスを体験することで、作業量等の観点から自治体職員が現状の業務に加えて、手作業でデータ加工を行うことは負荷の観点で困難であると感じた</td>
       <td></td><td></td><td>○</td><td></td><td></td><td></td><td></td><td></td>
     </tr>
     <tr>
@@ -144,7 +142,7 @@ Version：0.1
       <td></td><td></td><td>○</td><td></td><td></td><td></td><td>○</td><td></td>
     </tr>
     <tr>
-      <td>以下の理由から初めにフォーマットを用意しておく必要性を実感した<br>● 地域ごとにフォーマットが異なる<br>● 半角全角、記号などの統一が行われていない<br>● 自治体がオープンデータに加えた工夫で、かえって扱いにくいデータ形式になってしまっている</td>
+      <td>以下の理由から初めにフォーマットを用意しておく必要性を実感した<br>● 地域ごとにフォーマットが異なる<br>● 半角全角、記号などの統一が行われていない<br>● 自治体がオープンデータに加えた工夫（「市」の行を追加してグルーピングしている）で、かえって扱いにくいデータ形式になってしまっている</td>
       <td></td><td></td><td>○</td><td></td><td></td><td>○</td><td>○</td><td></td>
     </tr>
     <tr>
@@ -173,7 +171,7 @@ Version：0.1
 #### **Social Hack Day #57**  (イベント詳細：[Social Hack Day #57 イベントレポート](event/event_report_20240120.md))  
 
 ##### 概要  
-[Social Hack Day #56](#social-hack-day-56-social-hack-day-56-イベントレポート)で議論したデータの収集蓄積プロセス及びフィードバックプロセスの有効性を確認した。  
+[Social Hack Day #56](#social-hack-day-56-イベント詳細social-hack-day-56-イベントレポート)で議論したデータの収集蓄積プロセス及びフィードバックプロセスの有効性を確認した。  
 
 データの収集蓄積プロセスは、データ利用者がデータを有効に活用する為のデータ構造に関して継続議論した。  
 
@@ -281,35 +279,111 @@ Version：0.1
   </tbody>
 </table>
 
-#### **Social Hack Day #58**  (イベント詳細：[Social Hack Day #58 イベントレポート](http://))  
+#### **Social Hack Day #58**  (イベント詳細：[Social Hack Day #58 イベントレポート](event/event_report_20240217.md))  
 
 ##### 概要  
+[Social Hack Day #57](#social-hack-day-57-イベント詳細social-hack-day-57-イベントレポート)で議論した、データ提供者とデータ利用者の間を仲介する二次データ提供者の作業プロセスにフォーカスを当て、そのプロセスの一部を実際に実施した。  
+
+二次データ提供者の作業プロセスは既存のDataOpsプロセスには存在しない為、以下を想定。  
+
+1. 一次データ提供者(データ提供者：自治体職員など)が公開したデータを取得する（二次データ提供者によるデータ取得プロセス）
+2. 取得したデータを機械判読可能なデータへ加工する  （二次データ提供者によるデータ処理プロセス）
+3. データ利用者が利用できる形で提供・公開を行う（二次データ提供者によるデータ公開プロセス）
+4. 一連のプロセスをCIなどで自動化する（二次データ提供者による自動化プロセス）
+
+今回はこのうち、1、2、4の作業を実施した。  
+実際の作業内容としては以下の通り。  
+
+- 厚労省が公開している「緊急避妊薬医療機関」のPDFデータ一括取得（dimによるデータ更新管理含む）
+- 取得したPDFデータのCSV変換（フォーマットが異なるPDFについても考慮）
+- PDF取得からCSV変換までの GitHub Actions による自動化
 
 ##### 成果  
 
+<table border="1">
+  <thead>
+    <tr style="text-align:center">
+      <th width="600px" rowspan="2">成果</th>
+      <th colspan="8">関連するDataOpsプロセス</th>
+    </tr>
+    <tr>
+      <th style="writing-mode: tb-rl;">課題抽出</th><th style="writing-mode: tb-rl;">計画</th><th style="writing-mode: tb-rl;">データの収集蓄積</th><th style="writing-mode: tb-rl;">データの公開</th><th style="writing-mode: tb-rl;">データの取得</th><th style="writing-mode: tb-rl;">データの処理</th><th style="writing-mode: tb-rl;">データの活用</th><th style="writing-mode: tb-rl;">フィードバック</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>tabulaとpandasを用いたPDF→CSV変換で、改行コードを置換することで変換することに成功した</td>
+      <td></td><td></td><td></td><td></td><td></td><td>○</td><td></td><td></td>
+    </tr>
+    <tr>
+      <td>dimの機能を活用して、PDFを取得することに成功した</td>
+      <td></td><td></td><td></td><td></td><td>○</td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td>CIによって定期的（1日1回）にPDFを一括ダウンロードし、CSVに自動変換するツールが完成した</td>
+      <td></td><td></td><td></td><td></td><td>○</td><td>○</td><td></td><td></td>
+    </tr>
+  </tbody>
+</table>
+
 ##### 課題  
 
-#### **オープンデータ・デイ in 沖縄**  (イベント詳細：[オープンデータ・デイ in 沖縄 イベントレポート](http://))  
-
-##### 概要  
-
-##### 成果  
-
-##### 課題  
-
-#### **Code for Japan+TIS スマートシティイベント**  (イベント詳細：[Code for Japan+TIS スマートシティイベント イベントレポート](http://))  
-
-##### 概要  
-
-##### 成果  
-
-##### 課題  
+<table border="1">
+  <thead>
+    <tr style="text-align:center">
+      <th width="600px" rowspan="2">課題</th>
+      <th colspan="8">関連するDataOpsプロセス</th>
+    </tr>
+    <tr>
+      <th style="writing-mode: tb-rl;">課題抽出</th><th style="writing-mode: tb-rl;">計画</th><th style="writing-mode: tb-rl;">データの収集蓄積</th><th style="writing-mode: tb-rl;">データの公開</th><th style="writing-mode: tb-rl;">データの取得</th><th style="writing-mode: tb-rl;">データの処理</th><th style="writing-mode: tb-rl;">データの活用</th><th style="writing-mode: tb-rl;">フィードバック</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>オープンデータとして公開されているPDFが定期的に更新され、リンク切れが発生してしまう<br>→ dimによるデータ更新管理で対応</td>
+      <td></td><td></td><td></td><td></td><td>○</td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td>リンク切れの判別は、PDFをダウンロードして確認するか、サイトの最終更新で確認するしかない<br>→ dimによるデータ更新管理で対応</td>
+      <td></td><td></td><td></td><td></td><td>○</td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td>dimによるPDF取得時に2ファイルほど関係のないファイルが混ざっている</td>
+      <td></td><td></td><td></td><td></td><td>○</td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td>PDFを一括ダウンロードして、csvのような機械可読性の高いものに自動変換したい<br>→ イベント内で作成完了</td>
+      <td></td><td></td><td></td><td></td><td>○</td><td>○</td><td></td><td></td>
+    </tr>
+    <tr>
+      <td>Robocorpを使用したPDF→CSV変換ではPDF内のテーブルが認識されずテキストとして出力されてしまう</td>
+      <td></td><td></td><td></td><td></td><td></td><td>○</td><td></td><td></td>
+    </tr>
+    <tr>
+      <td>tabulaとpandasを用いたPDF→CSV変換を行う際、以下の課題を確認<br>● 変換後、出力されたCSVがPDFのページ毎にわかれてしまう → イベント内で対応済<br>● PDFのヘッダーが毎回記述されてわかりにくい</td>
+      <td></td><td></td><td></td><td></td><td></td><td>○</td><td></td><td></td>
+    </tr>
+    <tr>
+      <td>各都道府県によってフォーマットの差異がある（１ページ目だけにヘッダーが記載されている、独自の列があるなど）</td>
+      <td></td><td></td><td></td><td></td><td></td><td>○</td><td></td><td></td>
+    </tr>
+    <tr>
+      <td>データが公開されているページにPDFの追加や順番の入れ替わり等が発生するとPDFの更新取得処理に失敗する可能性がある<br>→ CIが落ちることで検知可能</td>
+      <td></td><td></td><td></td><td></td><td>○</td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td>今回のPDF→CSV変換処理は、幅広い分野のオープンデータに対しても検証を進めた方がいい</td>
+      <td></td><td></td><td></td><td></td><td></td><td>○</td><td></td><td></td>
+    </tr>
+  </tbody>
+</table>
 
 ### イベントにて実施したアンケート結果
 
 DataOpsのプロセスがオープンデータ利活用促進につながるかの根拠を得る為、イベント参加者にアンケートを実施した。
 
-[アンケート結果](event/survey/survey_20231216.md) 
+- [アンケート結果(12月開催分)](event/survey/survey_20231216.md)   
+- [アンケート結果(2月開催分)](event/survey/survey_20240217.md) 
 
 ## **３ 考察**  
 
@@ -362,6 +436,15 @@ DataOpsのプロセスがオープンデータ利活用促進につながるか�
 - ITやオープンデータに精通した人の知見が必要
 - 作業コストがかかる
 
+なお、以下内閣官房が公開している資料[^6]では、DX・情報関係業務の担当職員数は、3名以下の自治体が54.6％(950団体/1,741団体)、1名以下の自治体が16.9％(295団体/1,741団体)と報告されている。過半数が3名以下であるため、自治体職員の負担は大きいと考えられる。  
+
+![地方公共団体職員数](media/image79.png) 
+
+以下総務省のレポート[^7]からも、自治体職員以外の人材に頼らざるを得ない状況と言える。  
+
+![外部デジタル人材の活用](media/image80.png) 
+
+
 対策としては、データ提供者とデータ利用者の間を仲介する（機械判読可能なデータに加工する）ステークホルダを設け、二次データ提供者としてデータの取得、データの処理をするプロセスをDataOpsプロセスに追加することが考えられる。  
 
 この対策を実施することで、データ提供者に負担をかけずに、扱いやすいデータをデータ利用者が使えるようになると考えられる。  
@@ -382,6 +465,11 @@ DataOpsのプロセスがオープンデータ利活用促進につながるか�
 加工するフォーマット例：GIF や 自治体標準オープンデータセット
 - データ利用者が利用できる形で提供・公開を行う（DataOpsプロセスにおけるデータの公開）
 - 一連のプロセスをCIなどで自動化する
+
+検証イベントでは、厚労省が公開している「緊急避妊薬医療機関」のPDFを一括ダウンロードし、CSVデータへ変換するプロセスを自動化することに成功した。  
+しかし、以下のような課題がまだ残っている為、今後もさらに検討を進める必要があると考えられる。  
+- 変換したCSVに不要な改行や余計なヘッダー情報が含まれている
+- 他のオープンデータに関しても「[Social Hack Day #58](#social-hack-day-58-イベント詳細social-hack-day-58-イベントレポート)」の課題に記載したような問題が発生する可能性がある為、幅広いオープンデータに対して検証を進める必要がある
 
 ###### 二次データ提供者となりうるステークホルダ
 
@@ -417,7 +505,7 @@ GIFや自治体標準オープンデータセットに準拠した機械判読�
 データを有効に活用していく為には利用者のニーズに応じたメンテナンスを継続的に実施する必要がある。  
 ニーズの把握や、データ提供者のモチベーションを維持する目的としても「フィードバック」プロセスは重要な役割を持つと考えられる。  
 
-フィードバックの仕組みを実現する方法の一つとして、OSSとして公開されているCKAN拡張機能（ckanext-feedback）[^6]を活用する方法が挙げられる。  
+フィードバックの仕組みを実現する方法の一つとして、OSSとして公開されているCKAN拡張機能（ckanext-feedback）[^8]を活用する方法が挙げられる。  
 CKAN拡張機能はデータセットに対する評価や「要望、質問、宣伝、感謝」のフィードバックコメントを記載できるようになっている。  
 
 データ提供者にとってモチベーションが向上するフィードバックを実施することが、データ提供におけるモチベーション維持につながると考える。  
@@ -465,4 +553,9 @@ CKAN拡張機能はデータセットに対する評価や「要望、質問、�
 [^3]: SIP NIIコンソーシアム, "データカタログ横断検索システム" [オンライン]. Available: https://search.ckan.jp/. [アクセス日: 05 03 2024].  
 [^4]: Digital Agency,Government of Japan, "政府相互運用性フレームワーク（GIF）" [オンライン]. Available: https://www.digital.go.jp/policies/data_strategy_government_interoperability_framework. [アクセス日: 20 02 2024].  
 [^5]: Digital Agency,Government of Japan, "自治体標準オープンデータセット（正式版）" [オンライン]. Available: https://www.digital.go.jp/resources/open_data/municipal-standard-data-set-test. [アクセス日: 20 02 2024].  
-[^6]: C3Lab, "ckanext-feedback" [オンライン]. Available: https://github.com/c-3lab/ckanext-feedback. [アクセス日: 26 02 2024].   
+[^6]: 内閣官房デジタル行財政改革会議事務局, “「国・地方を通じたDXの推進」に係る討議資料,” 2 2024. [オンライン]. Available: https://www.cas.go.jp/jp/seisaku/digital_gyozaikaikaku/taiwa6/240227taiwa1.pdf. [アクセス日: 29 03 2024].  
+[^7]: 総務省⾃治⾏政局地域⼒創造グループ地域情報化企画室, “⾃治体DX・情報化推進概要,” 4 2023. [オンライン]. Available: https://www.soumu.go.jp/main_content/000878726.pdf. [アクセス日: 29 03 2024].  
+[^8]: C3Lab, "ckanext-feedback" [オンライン]. Available: https://github.com/c-3lab/ckanext-feedback. [アクセス日: 26 02 2024].   
+
+
+
