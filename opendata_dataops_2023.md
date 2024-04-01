@@ -1,7 +1,7 @@
 # DataOpsを活用したオープンデータ利活用に関する報告書
 
-Version：0.1  
-公開日：2024年xx月xx日  
+Version：1.0  
+公開日：2024年4月1日  
 著者：C3Lab
 
 ![](media/image1.png)
@@ -29,6 +29,8 @@ Version：0.1
 [**４ まとめ**](#４-まとめ)  
 
 [**５ 今後の展望**](#５-今後の展望)  
+
+<div style="page-break-before:always"></div>
 
 ## **１ はじめに**
 
@@ -87,6 +89,8 @@ data policy)
 ![](media/image101.PNG)  
 
 DataOpsプロセスの活用により、アクセシビリティの評価改善となるか否かを確認する。  
+
+<div style="page-break-before:always"></div>
 
 ## ２ 検証イベント実施内容
 
@@ -198,6 +202,8 @@ DataOpsプロセスの活用により、アクセシビリティの評価改善�
   </tbody>
 </table>
 
+<div style="page-break-before:always"></div>
+
 #### **Social Hack Day #57**  (イベント詳細：[Social Hack Day #57 イベントレポート](event/event_report_20240120.md))  
 
 ##### 概要  
@@ -244,6 +250,8 @@ DataOpsプロセスの活用により、アクセシビリティの評価改善�
     </tr>
   </tbody>
 </table>
+
+<div style="page-break-before:always"></div>
 
 ##### 課題  
 
@@ -309,6 +317,8 @@ DataOpsプロセスの活用により、アクセシビリティの評価改善�
   </tbody>
 </table>
 
+<div style="page-break-before:always"></div>
+
 #### **Social Hack Day #58**  (イベント詳細：[Social Hack Day #58 イベントレポート](event/event_report_20240217.md))  
 
 ##### 概要  
@@ -355,6 +365,8 @@ DataOpsプロセスの活用により、アクセシビリティの評価改善�
     </tr>
   </tbody>
 </table>
+
+<div style="page-break-before:always"></div>
 
 ##### 課題  
 
@@ -407,6 +419,8 @@ DataOpsプロセスの活用により、アクセシビリティの評価改善�
     </tr>
   </tbody>
 </table>
+
+<div style="page-break-before:always"></div>
 
 ### イベントにて実施したアンケート結果
 
@@ -470,6 +484,8 @@ DataOpsのプロセスがオープンデータ利活用促進につながるか�
 
 ![地方公共団体職員数](media/image79.png) 
 
+<div style="page-break-before:always"></div>
+
 以下総務省のレポート[^9]からも、自治体職員以外の人材に頼らざるを得ない状況と言える。  
 
 ![外部デジタル人材の活用](media/image80.png) 
@@ -529,6 +545,8 @@ GIFや自治体標準オープンデータセットに準拠した機械判読�
 - 細かい指摘や修正を命令するためには結局ITの知識が必要となる
 
 ※3 ハルミネーションとは人工知能（AI）が事実に基づかない情報を生成する現象  
+
+<div style="page-break-before:always"></div>
 
 #### データ利用者からのフィードバックを増やす
 
@@ -616,11 +634,11 @@ data policy)
   - APIアクセス  
 
 ## **参考文献**
-[^1]: クリエイティブ・コモンズ・ライセンス, “クリエイティブ・コモンズ・ライセンス,” [オンライン]. Available: https://creativecommons.org/licenses/by/4.0/. [アクセス日: 16 09 2022].
+[^1]: クリエイティブ・コモンズ・ライセンス, “クリエイティブ・コモンズ・ライセンス,” [オンライン]. Available: https://creativecommons.org/licenses/by/4.0/. [アクセス日: 16 09 2022].  
 [^2]: Gartner, Inc. and/or its affiliates., “Press Releases,” 11 9 2018. [オンライン]. Available: https://www.gartner.com/en/newsroom/press-releases/2018-09-11-gartner-hype-cycle-for-data-management-positions-three-technologies-in-the-innovation-trigger-phase-in-2018. [アクセス日: 29 8 2022].  
-[^3]: SIP NIIコンソーシアム, "データカタログ横断検索システム" [オンライン]. Available: https://search.ckan.jp/. [アクセス日: 05 03 2024].  
-[^4]: Digital Agency,Government of Japan, "政府相互運用性フレームワーク（GIF）" [オンライン]. Available: https://www.digital.go.jp/policies/data_strategy_government_interoperability_framework. [アクセス日: 20 02 2024].  
-[^5]: Digital Agency,Government of Japan, "自治体標準オープンデータセット（正式版）" [オンライン]. Available: https://www.digital.go.jp/resources/open_data/municipal-standard-data-set-test. [アクセス日: 20 02 2024].  
+[^3]: OECD Governance[OECDgov], (2024/3/5), Policy paper presents the main findings of the latest OECD Open, Useful, & Re-usable Data Index, benchmarking efforts made by governments to design and implement national open government data policies.[Twitter moment], Retrieved from https://twitter.com/OECDgov/status/1764952238676435404/photo/1  
+[^4]: OECD, “2023 OECD OURdata Index,” [オンライン]. Available: https://www.oecd-ilibrary.org/docserver/a37f51c3-en.pdf?expires=1711348798&id=id&accname=guest&checksum=E1F0CAEFD124E54C50970D55982D0FF8. [アクセス日: 22 3 2024].  
+[^5]: SIP NIIコンソーシアム, "データカタログ横断検索システム" [オンライン]. Available: https://search.ckan.jp/. [アクセス日: 05 03 2024].  
 [^6]: Digital Agency,Government of Japan, "政府相互運用性フレームワーク（GIF）" [オンライン]. Available: https://www.digital.go.jp/policies/data_strategy_government_interoperability_framework. [アクセス日: 20 02 2024].  
 [^7]: Digital Agency,Government of Japan, "自治体標準オープンデータセット（正式版）" [オンライン]. Available: https://www.digital.go.jp/resources/open_data/municipal-standard-data-set-test. [アクセス日: 20 02 2024].  
 [^8]: 内閣官房デジタル行財政改革会議事務局, “「国・地方を通じたDXの推進」に係る討議資料,” 2 2024. [オンライン]. Available: https://www.cas.go.jp/jp/seisaku/digital_gyozaikaikaku/taiwa6/240227taiwa1.pdf. [アクセス日: 29 03 2024].  
